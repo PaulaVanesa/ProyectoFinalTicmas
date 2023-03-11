@@ -1,0 +1,352 @@
+*{margin:0px;padding:0px;box-sizing: border-box;font-family:'Ubuntu', sans-serif;}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: url(../img/fondo.png) no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    align-items: center;
+    
+}
+#chk_btn{
+    display: none;
+}
+/* CHECKER */
+.lblchk_btn{
+    display: inline-block;
+    width:45px;
+    height: 20px;
+    background-color: #a1a1a1;
+    border-radius: 100px;
+    margin:10px 0;
+    position:relative;
+    transition: all 0.5s;
+}
+
+.lblchk_btn::after{
+    content: '';
+    width:22px;
+    height: 22px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 100px;
+    top:-1px;
+    left:0;
+    transition: all 0.5s;
+}
+
+#chk_btn:checked ~ .lblchk_btn::after{
+    left:23px;
+}
+#chk_btn:checked ~ .lblchk_btn{
+    background-color: rgb(59, 141, 248);
+}
+/************/
+
+/* AREA PERFIL */
+.area_perfil{
+    width:80%;
+   
+    
+}
+.area_perfil img{
+    width:100%;
+    border-radius: 25px;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.3);
+}
+.area_perfil h1{
+    text-align: center;
+}
+
+/************/
+
+/* AREA ICONOS */
+
+.area_iconos{
+    display: flex;
+    justify-content: space-between;
+    width:90%;
+    margin:10px 0px;
+
+}
+
+.icono{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding:10px 5px;
+    box-shadow:0px 0px 10px rgb(0,0,0,0.3);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.icono:hover{
+    background-color:rgb(59, 141, 248);
+    color:#fff;
+}
+
+.icono a i{
+    font-size: 25px;
+    color: rgb(59, 141, 248);
+}
+.icono:hover a i{
+    color: #fff;
+}
+
+.hidden {
+    display: none;
+  }
+  
+.visuallyhidden {
+opacity: 0;
+}
+
+/************/
+
+
+/* AREA INFO */
+
+
+.area_info{
+    display:flex;
+    width:90%;
+    flex-wrap: wrap;
+}
+
+
+.caja_info{
+    width:90%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding:10px 15px;
+    box-shadow:0px 0px 10px rgb(0,0,0,0.3);
+    margin:15px auto;
+    transition: all 1s;
+}
+
+
+.ocultarDisplay{
+    display: none;
+}
+
+.ocultarOpacidad{
+    opacity:0;
+}
+
+
+    /* ABOUT */
+    .txt_info{
+        text-align: justify;
+    }
+
+    .icon_info{
+        margin:10px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icon_grupo{
+        margin: 10px 0px;
+    }
+
+    .icon_grupo i{
+        margin-right: 5px;
+        color: rgb(59, 141, 248);
+    }
+
+    .icon_redes{
+        width:50%;
+        margin:15px auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .icon_redes i{
+        font-size: 25px;
+        color: rgb(59, 141, 248);
+    }
+    .caja_btn{
+        display: flex;
+        justify-content: center;
+        margin-top:15px;
+    }
+    .btn:hover{
+        background-color: #fff;
+        color: rgb(59, 141, 248);
+        border:1px solid rgb(59, 141, 248);
+    }
+
+    .btn{
+        background-color: rgb(59, 141, 248);
+        color:#fff;
+        padding:15px;
+        cursor: pointer;
+        transition: all 1s;
+        
+    }
+
+    /************/
+
+    /* RESUMEN */
+    .grupo_resumen{
+        display: flex;
+    }
+    .grupo_resumen i{
+        font-size: 25px;
+        color: rgb(59, 141, 248);
+        margin-right: 5px;
+        margin-top: 10px;
+    }
+
+    .grupo_resumen h2{
+        margin-top: 10px;
+    }
+    .grupo_resumen{
+        margin-bottom: 15px;
+    }
+
+    .txt_resumen h3{
+        margin-top: 25px;
+    }
+    .txt_resumen span{
+        font-size: 14px;
+    }
+
+    .txt_resumen p{
+        text-align: justify;
+    }
+
+    .separador{
+        width:40px;
+        height:7px;
+        background-color: rgb(59, 141, 248);
+        border-radius: 100px;
+        margin:10px 0px;
+    }
+
+    .separador_grande{
+        margin: 20px 0px;
+    }
+
+    .grupo_resumen .icon_conocimiento{
+        font-size: 35px;
+        margin-right: 10px;
+    }
+
+    .grupo_conocimiento h3{
+        margin-bottom: 3px;
+    }
+
+    .grupo_conocimiento p{
+        text-align: justify;
+    }
+
+    /************/
+
+/* PORTFOLIO */
+
+.portfolio{
+    display: flex;
+    flex-direction: column;
+}
+
+.caja_info > h2{
+    margin:15px 0px;
+}
+
+.caja_fotos{
+    position: relative;
+}
+
+.caja_fotos img{
+    width: 100%;
+}
+
+.caja_fotos span{
+    position: absolute;
+    bottom: 2px;
+    background-color: rgba(59, 141, 248,0.7);
+    color:#fff;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-weight:bolder;
+    font-size: 20px;
+}
+
+/************/
+
+/* FORMULARIO */
+
+.grupo_form{
+    display: flex;
+    margin:10px 0;
+}
+
+
+.grupo_form input, .grupo_form textarea{
+    padding: 5px 10px;
+    flex:1;
+    border-radius: 15px;
+    border: 1px solid #a1a1a1;
+}
+input::placeholder, textarea::placeholder{
+    font-size: 15px;
+    color: #a1a1a1;
+}
+
+.grupo_form i{
+    font-size: 20px;
+    color: rgb(59, 141, 248);
+
+}
+
+input[type=submit]{
+    border: none;
+    outline: none;
+}
+
+footer{
+    text-align: center;
+    font-size: 13px;
+    color:#646464;
+    padding:10px 0px;
+}
+
+/***********/
+
+/* RESPONSIVE RULES */
+@media(min-width:590px){
+
+    .area_iconos{
+        width:55%;
+    }
+    .area_info{
+        width:61%;
+    }
+
+    .area_perfil{
+        display: flex;
+        margin:15px;
+        justify-content: center;
+    }
+
+    .area_perfil img{
+        width: 35%;
+    }
+    .area_perfil h1{
+        align-self: center;
+        margin-left: 10px;
+    }
+}

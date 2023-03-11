@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FUENTES GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!---->
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Curriculum Vitae</title>
+</head>
+<body>
+   <main>
+    <div class="separador_grande"></div>
+
+
+    <div class="area_perfil">
+        <img src="img/perfil.jpg" alt="Foto de perfil">
+        <h1>CV <br>Paula Vanesa Pallavicino</h1>
+    </div>
+
+    <div class="area_iconos">
+        <div class="icono" id="boton1" onclick="mostrar(this)">
+            <a href="#about"><i class="fa-solid fa-address-card"></i></a>
+            <span class="txt_iconos"> About me</span>
+        </div>
+        <div class="icono" id="boton2" onclick="mostrar(this)">
+            <a href="#resumen"><i class="fa-solid fa-file-pen"></i></a>
+            <span class="txt_iconos">Resumen</span>
+        </div>
+        <div class="icono" id="boton3" onclick="mostrar(this)">
+            <a href="#portfolio"><i class="fa-sharp fa-solid fa-briefcase"></i></a>
+            <span class="txt_iconos">Portfolio</span>
+        </div>
+        <div class="icono" id="boton4" onclick="mostrar(this)">
+            <a href="#contacto"><i class="fa-solid fa-envelope"></i></a>
+            <span class="txt_iconos">Contacto</span>
+        </div>
+    </div>
+
+    <div class="area_info">
+       
+        <!-- CAJA ABOUT ME -->
+        <div class="caja_info  hidden visuallyhidden" id="caja1">
+             <a name="about"></a>
+            <h2>About me</h2>
+            <p class="txt_info">Mi nombre es Paula y tengo más de 9 años de experiencia en el campo de la docencia. Si bien poseo conocimientos en varias áreas de informática, me especializo más en el diseño, ya sea; gráfico, 3D o Web</p>
+            <div class="icon_info">
+                <div class="icon_grupo">
+                    <i class="fa-solid fa-cake-candles"></i><span>Edad: 36</span>
+                </div>
+                <div class="icon_grupo">
+                    <i class="fa-solid fa-flag"></i><span>Pais: Argentina</span>
+                </div>
+                <div class="icon_grupo">
+                    <i class="fa-solid fa-phone"></i><span>Teléfono: +54 11 5891-4598</span>
+                </div>
+                <div class="icon_grupo">
+                    <i class="fa-solid fa-at"></i><span>Correo: paula.pallavicino@gmail.com</span>
+                </div>
+
+            </div>
+            <div class="icon_redes">
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+            </div>
+            <div class="caja_btn">
+                <div class="btn">Descargar CV</div>
+            </div>   
+        </div>
+        <!-- CIERRA ABOUT ME -->
+
+        <!-- CAJA RESUMEN -->
+        <a name="resumen"></a>
+        <div class="caja_info  hidden visuallyhidden" id="caja2">
+            <div class="grupo_resumen">
+                <i class="fa-solid fa-check"></i><h2>Formación Académica</h2>
+            </div>
+            <div class="txt_resumen">
+                <h3>Lorem ipsum</h3>
+                <span>Lorem ipsum dolor sit amet, consectetur 2003</span>
+                <div class="separador"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida auctor lectus, vitae placerat massa elementum sit amet. Curabitur vitae lobortis mi. Aenean id est eget risus sollicitudin gravida. Aliquam aliquam, lorem a accumsan facilisis, mauris justo elementum nisl, non malesuada lorem nisi a metus. Mauris id purus cursus purus imperdiet convallis sed eget velit. Donec sit amet tortor euismod, vulputate ex sit amet, finibus tortor. Sed vitae auctor ex. Suspendisse potenti.</p>
+            </div>
+            <div class="txt_resumen">
+                <h3>Lorem ipsum</h3>
+                <span>Lorem ipsum dolor sit amet, consectetur 2009</span>
+                <div class="separador"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida auctor lectus, vitae placerat massa elementum sit amet. Curabitur vitae lobortis mi. Aenean id est eget risus sollicitudin gravida. Aliquam aliquam, lorem a accumsan facilisis, mauris justo elementum nisl, non malesuada lorem nisi a metus. Mauris id purus cursus purus imperdiet convallis sed eget velit. Donec sit amet tortor euismod, vulputate ex sit amet, finibus tortor. Sed vitae auctor ex. Suspendisse potenti.</p>
+            </div>
+            <div class="txt_resumen">
+                <h3>Lorem ipsum</h3>
+                <span>Lorem ipsum dolor sit amet, consectetur 2016</span>
+                <div class="separador"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida auctor lectus, vitae placerat massa elementum sit amet. Curabitur vitae lobortis mi. Aenean id est eget risus sollicitudin gravida. Aliquam aliquam, lorem a accumsan facilisis, mauris justo elementum nisl, non malesuada lorem nisi a metus. Mauris id purus cursus purus imperdiet convallis sed eget velit. Donec sit amet tortor euismod, vulputate ex sit amet, finibus tortor. Sed vitae auctor ex. Suspendisse potenti.</p>
+            </div>
+            <div class="txt_resumen">
+                <h3>Lorem ipsum</h3>
+                <span>Lorem ipsum dolor sit amet, consectetur 2020</span>
+                <div class="separador"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida auctor lectus, vitae placerat massa elementum sit amet. Curabitur vitae lobortis mi. Aenean id est eget risus sollicitudin gravida. Aliquam aliquam, lorem a accumsan facilisis, mauris justo elementum nisl, non malesuada lorem nisi a metus. Mauris id purus cursus purus imperdiet convallis sed eget velit. Donec sit amet tortor euismod, vulputate ex sit amet, finibus tortor. Sed vitae auctor ex. Suspendisse potenti.</p>
+            </div>
+
+            <div class="separador_grande"></div>
+
+            <div class="grupo_resumen">
+                <i class="fa-solid fa-check"></i><h2>Conocimientos</h2>
+            </div>
+            <div class="grupo_resumen">
+                <i class="fa-solid fa-camera icon_conocimiento"></i>
+                <div class="grupo_conocimiento">
+                    <h3>Fotografía</h3>
+                    <p class="txt_conocimiento">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida auctor lectus, vitae placerat massa elementum sit amet. Curabitur vitae lobortis mi. Aenean id est eget risus sollicitudin gravida</p>
+                </div>
+            </div>
+            <div class="grupo_resumen">
+                <i class="fa-solid fa-pen-to-square icon_conocimiento"></i>
+                <div class="grupo_conocimiento">
+                    <h3>Dibujo</h3>
+                    <p class="txt_conocimiento">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida auctor lectus, vitae placerat massa elementum sit amet. Curabitur vitae lobortis mi. Aenean id est eget risus sollicitudin gravida</p>
+                </div>
+            </div>
+            <div class="grupo_resumen">
+                <i class="fa-solid fa-cubes icon_conocimiento"></i>
+                <div class="grupo_conocimiento">
+                    <h3>Modelado y Render 3D</h3>
+                    <p class="txt_conocimiento">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida auctor lectus, vitae placerat massa elementum sit amet. Curabitur vitae lobortis mi. Aenean id est eget risus sollicitudin gravida</p>
+                </div>
+            </div>
+            <div class="grupo_resumen">
+                <i class="fa-solid fa-code icon_conocimiento"></i>
+                <div class="grupo_conocimiento">
+                    <h3>Diseño Web</h3>
+                    <p class="txt_conocimiento">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida auctor lectus, vitae placerat massa elementum sit amet. Curabitur vitae lobortis mi. Aenean id est eget risus sollicitudin gravida</p>
+                </div>
+            </div>
+
+            <div class="separador_grande"></div>
+
+            <div class="grupo_resumen">
+                <i class="fa-solid fa-check"></i><h2>Experiencia Laboral</h2>
+            </div>
+            <div class="txt_resumen">
+                <h3>Lorem ipsum</h3>
+                <span>Lorem ipsum dolor sit amet, consectetur 2003 - 2009</span>
+                <div class="separador"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida auctor lectus, vitae placerat massa elementum sit amet. Curabitur vitae lobortis mi. Aenean id est eget risus sollicitudin gravida. Aliquam aliquam, lorem a accumsan facilisis, mauris justo elementum nisl, non malesuada lorem nisi a metus. Mauris id purus cursus purus imperdiet convallis sed eget velit. Donec sit amet tortor euismod, vulputate ex sit amet, finibus tortor. Sed vitae auctor ex. Suspendisse potenti.</p>
+            </div>
+            <div class="txt_resumen">
+                <h3>Lorem ipsum</h3>
+                <span>Lorem ipsum dolor sit amet, consectetur 2009 - </span>
+                <div class="separador"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida auctor lectus, vitae placerat massa elementum sit amet. Curabitur vitae lobortis mi. Aenean id est eget risus sollicitudin gravida. Aliquam aliquam, lorem a accumsan facilisis, mauris justo elementum nisl, non malesuada lorem nisi a metus. Mauris id purus cursus purus imperdiet convallis sed eget velit. Donec sit amet tortor euismod, vulputate ex sit amet, finibus tortor. Sed vitae auctor ex. Suspendisse potenti.</p>
+            </div>
+        </div>
+        <!-- CIERRA RESUMEN -->
+
+        <!-- CAJA PORTFOLIO -->
+        <a name="portfolio"></a>
+        <div class="caja_info  hidden visuallyhidden" id="caja3">
+            <h2>Portfolio</h2>
+            <div class="portfolio">
+                <div class="caja_fotos">
+                    <span>Foto 1</span>
+                    <img src="img/foto-1.jpg" alt="">
+                    
+                </div>
+                <div class="caja_fotos">
+                    <span>Foto 2</span>
+                    <img src="img/foto-2.jpg" alt="">
+                </div>
+                <div class="caja_fotos">
+                    <span>Foto 3</span>
+                    <img src="img/foto-3.jpg" alt="">
+                </div>
+                <div class="caja_fotos">
+                    <span>Foto 4</span>
+                    <img src="img/foto-4.jpg" alt="">
+                </div>
+                <div class="caja_fotos">
+                    <span>Foto 5</span>
+                    <img src="img/foto-5.jpg" alt="">
+                </div>
+                <div class="caja_fotos">
+                    <span>Foto 6</span>
+                    <img src="img/foto-6.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- CIERRA PORTFOLIO -->  
+
+        <!-- CAJA CONTACTO -->
+        <div class="caja_info hidden visuallyhidden" id="caja4">
+            <a name="contacto"></a>
+            <h2>Formulario de contacto</h2>
+                <form action="" class="formulario">
+                    <div class="grupo_form">
+                        <input type="text" placeholder="Tu Nombre">
+                    </div>
+                    <div class="grupo_form">
+                        <input type="email" placeholder="Tu Correo" required>
+                    </div>
+                    <div class="grupo_form txt_area_form">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje"></textarea>
+                    </div>
+                    <input type="submit" class="btn">
+                </form>
+        </div>
+        <!-- CIERRA CONTACTO -->  
+    </div>
+   </main>
+   <footer>Creado por Paula Vanesa Pallavicino 2023 &copy; </footer>
+   <script src="https://kit.fontawesome.com/da442114f9.js" crossorigin="anonymous"></script>
+   <script src="js/script.js"></script>
+</body>
+</html>
